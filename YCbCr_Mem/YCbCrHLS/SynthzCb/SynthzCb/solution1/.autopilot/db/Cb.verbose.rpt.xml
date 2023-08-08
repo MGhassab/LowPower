@@ -1,0 +1,148 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Cb'" level="0">
+<item name = "Date">Sun Aug  6 19:46:39 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">SynthzCb</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">spartan7</item>
+<item name = "Target device">xc7s100-fgga676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.567, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">26, 26, 26, 26, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 681, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 25, 1729, 2086, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 210, -</column>
+<column name="Register">-, -, 411, -, -</column>
+<specialColumn name="Available">240, 160, 128000, 64000, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 15, 1, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Cb_dadddsub_64ns_bkb_U1">Cb_dadddsub_64ns_bkb, 0, 3, 445, 788, 0</column>
+<column name="Cb_dmul_64ns_64nscud_U2">Cb_dmul_64ns_64nscud, 0, 11, 299, 204, 0</column>
+<column name="Cb_dmul_64ns_64nscud_U3">Cb_dmul_64ns_64nscud, 0, 11, 299, 204, 0</column>
+<column name="Cb_sitodp_32ns_64dEe_U4">Cb_sitodp_32ns_64dEe, 0, 0, 343, 445, 0</column>
+<column name="Cb_sitodp_32ns_64dEe_U5">Cb_sitodp_32ns_64dEe, 0, 0, 343, 445, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln502_fu_234_p2">+, 0, 0, 19, 11, 12</column>
+<column name="sub_ln1311_fu_248_p2">-, 0, 0, 18, 10, 11</column>
+<column name="and_ln10_1_fu_164_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln10_2_fu_170_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln10_3_fu_176_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln10_4_fu_182_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln10_fu_158_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln10_1_fu_128_p2">icmp, 0, 0, 11, 8, 5</column>
+<column name="icmp_ln10_2_fu_134_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="icmp_ln10_3_fu_140_p2">icmp, 0, 0, 11, 8, 6</column>
+<column name="icmp_ln10_4_fu_146_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="icmp_ln10_5_fu_152_p2">icmp, 0, 0, 11, 8, 6</column>
+<column name="icmp_ln10_fu_122_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="r_V_fu_277_p2">lshr, 0, 0, 162, 54, 54</column>
+<column name="ap_return">select, 0, 0, 8, 1, 8</column>
+<column name="ush_fu_257_p3">select, 0, 0, 12, 1, 12</column>
+<column name="val_V_fu_311_p3">select, 0, 0, 8, 1, 8</column>
+<column name="r_V_1_fu_283_p2">shl, 0, 0, 378, 113, 113</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">129, 28, 1, 28</column>
+<column name="grp_fu_100_p0">15, 3, 32, 96</column>
+<column name="grp_fu_84_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_84_p0">15, 3, 64, 192</column>
+<column name="grp_fu_84_p1">21, 4, 64, 256</column>
+<column name="grp_fu_89_p1">15, 3, 64, 192</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="and_ln10_4_reg_341">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">27, 0, 27, 0</column>
+<column name="reg_106">64, 0, 64, 0</column>
+<column name="reg_111">64, 0, 64, 0</column>
+<column name="reg_117">64, 0, 64, 0</column>
+<column name="tmp_4_reg_356">64, 0, 64, 0</column>
+<column name="tmp_5_reg_366">64, 0, 64, 0</column>
+<column name="tmp_V_1_reg_377">52, 0, 52, 0</column>
+<column name="tmp_V_reg_371">11, 0, 11, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Cb, return value</column>
+<column name="ap_return">out, 8, ap_ctrl_hs, Cb, return value</column>
+<column name="R">in, 8, ap_none, R, scalar</column>
+<column name="G">in, 8, ap_none, G, scalar</column>
+<column name="B">in, 8, ap_none, B, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,15 @@
+power add memoization_TB/memoization/*
+run 4600ns
+power report -all -bsaif routed.saif
+quit
+
+
+
+power add accurate_TB/accurate/*
+
+
+for 16
+run 4600ns
+
+for 64
+run 82000ns

@@ -1,0 +1,83 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7s100-fgga676-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7s100-fgga676-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Cr.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 185.199 ; gain = 97.625
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 185.199 ; gain = 97.625
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 185.199 ; gain = 97.625
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:91) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned char, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, double>' into '__hls_fptoui_double_i8' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_double_i8' into 'Cr' (Cr.c:17) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 213.004 ; gain = 125.430
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned char, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, double>' into '__hls_fptoui_double_i8' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_double_i8' into 'Cr' (Cr.c:17) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Cr.c:19:2) in function 'Cr'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Cr' (Cr.c:5)...5 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 271.402 ; gain = 183.828
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 286.215 ; gain = 198.641
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Cr' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Cr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.422 seconds; current allocated memory: 215.678 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.363 seconds; current allocated memory: 215.944 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Cr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cr/R' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cr/G' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cr/B' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Cr' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'Cr_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'Cr_dadddsub_64ns_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Cr_dmul_64ns_64ns_64_5_max_dsp_1' to 'Cr_dmul_64ns_64nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Cr_sitodp_32ns_64_5_1' to 'Cr_sitodp_32ns_64dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Cr_dadddsub_64ns_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cr_dmul_64ns_64nscud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cr_sitodp_32ns_64dEe': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Cr'.
+INFO: [HLS 200-111]  Elapsed time: 0.311 seconds; current allocated memory: 216.550 MB.
+WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.
+WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 302.527 ; gain = 214.953
+INFO: [VHDL 208-304] Generating VHDL RTL for Cr.
+INFO: [VLOG 209-307] Generating Verilog RTL for Cr.
+INFO: [HLS 200-112] Total elapsed time: 14.303 seconds; peak allocated memory: 216.550 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7s100-fgga676-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.

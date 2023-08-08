@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used." projectName="SynthzY" solutionName="solution1" date="2023-08-06T20:42:36.585+0430" type="Warning"/>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used." projectName="SynthzY" solutionName="solution1" date="2023-08-06T20:42:35.757+0430" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.&#xD;&#xA;&#xD;&#xA;****** Vivado v2019.1 (64-bit)&#xD;&#xA;  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019&#xD;&#xA;  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019&#xD;&#xA;    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;source run_ippack.tcl -notrace" projectName="SynthzY" solutionName="solution1" date="2023-08-06T20:43:13.960+0430" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

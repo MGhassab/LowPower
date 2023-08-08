@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../edgeDetection_1.srcs/sources_1/new/memoization.vhd" \
+"../../../../edgeDetection_1.srcs/sim_1/new/memoization_TB.vhd" \
+
+# Do not sort compile order
+nosort

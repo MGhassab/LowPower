@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Cb.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCb\Cb.c"/>
+    <originFiles name="Cb.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCb\Cb.h"/>
+  </source>
+  <testbench>
+    <originFiles name="CbTest.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCb\CbTest.c"/>
+    <originFiles name="input.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCb\input.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

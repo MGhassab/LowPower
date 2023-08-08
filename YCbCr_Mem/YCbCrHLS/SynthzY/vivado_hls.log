@@ -1,0 +1,31 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'ESRLab-04' on host 'desktop-nscbn50' (Windows NT_amd64 version 6.2) on Sun Aug 06 19:43:01 +0330 2023
+INFO: [HLS 200-10] In directory 'C:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzY'
+Sourcing Tcl script 'C:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzY/SynthzY/solution1/export.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzY/SynthzY'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzY/SynthzY/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7s100-fgga676-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Y_ap_dadd_3_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Y_ap_dadd_3_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Y_ap_dmul_3_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Y_ap_dmul_3_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Y_ap_sitodp_3_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Y_ap_sitodp_3_no_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  6 19:43:28 2023...

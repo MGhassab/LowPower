@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Cr.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCr\Cr.c"/>
+    <originFiles name="Cr.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCr\Cr.h"/>
+  </source>
+  <testbench>
+    <originFiles name="CrTest.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCr\CrTest.c"/>
+    <originFiles name="input.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzCr\input.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

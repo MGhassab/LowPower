@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Y.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzY\Y.c"/>
+    <originFiles name="Y.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzY\Y.h"/>
+  </source>
+  <testbench>
+    <originFiles name="YTest.c" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzY\YTest.c"/>
+    <originFiles name="input.h" path="C:\Users\ESRLab-04\Desktop\YCbCrHLS\SynthzY\input.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

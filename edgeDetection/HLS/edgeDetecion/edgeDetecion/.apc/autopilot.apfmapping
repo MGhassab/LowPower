@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.c" path="C:\Users\ESRLab-04\Desktop\edgeDetecion\sobel.c"/>
+    <originFiles name="sobel.h" path="C:\Users\ESRLab-04\Desktop\edgeDetecion\sobel.h"/>
+  </source>
+  <testbench>
+    <originFiles name="input.h" path="C:\Users\ESRLab-04\Desktop\edgeDetecion\input.h"/>
+    <originFiles name="output.h" path="C:\Users\ESRLab-04\Desktop\edgeDetecion\output.h"/>
+    <originFiles name="sobelTest.c" path="C:\Users\ESRLab-04\Desktop\edgeDetecion\sobelTest.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

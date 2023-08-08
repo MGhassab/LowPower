@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug  6 15:15:19 2023
+# Process ID: 4452
+# Current directory: C:/Users/ESRLab-04/Desktop/edgeDetection_1/edgeDetection_1/edgeDetection_1.runs/impl_1
+# Command line: vivado.exe -log memoization.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source memoization.tcl -notrace
+# Log file: C:/Users/ESRLab-04/Desktop/edgeDetection_1/edgeDetection_1/edgeDetection_1.runs/impl_1/memoization.vdi
+# Journal file: C:/Users/ESRLab-04/Desktop/edgeDetection_1/edgeDetection_1/edgeDetection_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source memoization.tcl -notrace

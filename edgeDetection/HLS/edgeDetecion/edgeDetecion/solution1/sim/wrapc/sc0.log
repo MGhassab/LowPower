@@ -1,0 +1,21 @@
+   Build using "C:/Xilinx/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling apatb_sobel_filter.cpp
+   Compiling (apcc) sobel.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ESRLab-04' on host 'desktop-nscbn50' (Windows NT_amd64 version 6.2) on Sun Aug 06 15:53:04 +0330 2023
+INFO: [HLS 200-10] In directory 'C:/Users/ESRLab-04/Desktop/edgeDetecion/edgeDetecion/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) sobelTest.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ESRLab-04' on host 'desktop-nscbn50' (Windows NT_amd64 version 6.2) on Sun Aug 06 15:53:08 +0330 2023
+INFO: [HLS 200-10] In directory 'C:/Users/ESRLab-04/Desktop/edgeDetecion/edgeDetecion/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

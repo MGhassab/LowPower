@@ -1,0 +1,35 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedPorts":"ap_ctrl_2|",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port ap_ctrl -pg 1 -lvl 0 -x -140 -y 30 -defaultsOSRD
+preplace port ap_ctrl_1 -pg 1 -lvl 0 -x -140 -y 230 -defaultsOSRD
+preplace port ap_ctrl_2 -pg 1 -lvl 0 -x -140 -y 470 -defaultsOSRD
+preplace port ap_clk -pg 1 -lvl 0 -x -140 -y 50 -defaultsOSRD
+preplace port ap_rst -pg 1 -lvl 0 -x -140 -y 70 -defaultsOSRD
+preplace portBus R -pg 1 -lvl 0 -x -140 -y 90 -defaultsOSRD
+preplace portBus G -pg 1 -lvl 0 -x -140 -y 110 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 0 -x -140 -y 130 -defaultsOSRD
+preplace portBus ap_return -pg 1 -lvl 2 -x 480 -y 80 -defaultsOSRD
+preplace portBus ap_return_1 -pg 1 -lvl 2 -x 480 -y 280 -defaultsOSRD
+preplace portBus ap_return_2 -pg 1 -lvl 2 -x 480 -y 520 -defaultsOSRD
+preplace inst Y_0 -pg 1 -lvl 1 -x 140 -y 80 -defaultsOSRD
+preplace inst Cb_0 -pg 1 -lvl 1 -x 140 -y 280 -defaultsOSRD
+preplace inst Cr_0 -pg 1 -lvl 1 -x 140 -y 520 -defaultsOSRD
+preplace netloc ap_clk_1 1 0 1 -80 50n
+preplace netloc ap_rst_1 1 0 1 -90 70n
+preplace netloc R_1 1 0 1 -100 90n
+preplace netloc G_1 1 0 1 -110 110n
+preplace netloc B_1 1 0 1 -120 130n
+preplace netloc Y_0_ap_return 1 1 1 N 80
+preplace netloc Cb_0_ap_return 1 1 1 N 280
+preplace netloc Cr_0_ap_return 1 1 1 N 520
+preplace netloc ap_ctrl_1 1 0 1 N 30
+preplace netloc ap_ctrl_1_1 1 0 1 N 230
+preplace netloc ap_ctrl_2_1 1 0 1 N 470
+levelinfo -pg 1 -140 140 480
+pagesize -pg 1 -db -bbox -sgen -250 -160 640 690
+"
+}
+

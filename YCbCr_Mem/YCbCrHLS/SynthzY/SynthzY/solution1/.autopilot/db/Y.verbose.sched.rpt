@@ -1,0 +1,409 @@
+
+
+================================================================
+== Vivado HLS Report for 'Y'
+================================================================
+* Date:           Sun Aug  6 19:42:33 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        SynthzY
+* Solution:       solution1
+* Product family: spartan7
+* Target device:  xc7s100-fgga676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.567|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   26|   26|   26|   26|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 27
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.01>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%B_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %B) nounwind" [Y.c:5]   --->   Operation 28 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%G_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %G) nounwind" [Y.c:5]   --->   Operation 29 'read' 'G_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%R_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %R) nounwind" [Y.c:5]   --->   Operation 30 'read' 'R_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.21ns)   --->   "%icmp_ln10 = icmp ult i8 %R_read, 66" [Y.c:10]   --->   Operation 31 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (1.21ns)   --->   "%icmp_ln10_1 = icmp ugt i8 %R_read, 26" [Y.c:10]   --->   Operation 32 'icmp' 'icmp_ln10_1' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (1.21ns)   --->   "%icmp_ln10_2 = icmp ult i8 %G_read, 76" [Y.c:10]   --->   Operation 33 'icmp' 'icmp_ln10_2' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (1.21ns)   --->   "%icmp_ln10_3 = icmp ugt i8 %G_read, 36" [Y.c:10]   --->   Operation 34 'icmp' 'icmp_ln10_3' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (1.21ns)   --->   "%icmp_ln10_4 = icmp ult i8 %B_read, 85" [Y.c:10]   --->   Operation 35 'icmp' 'icmp_ln10_4' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (1.21ns)   --->   "%icmp_ln10_5 = icmp ugt i8 %B_read, 45" [Y.c:10]   --->   Operation 36 'icmp' 'icmp_ln10_5' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_4)   --->   "%and_ln10 = and i1 %icmp_ln10_1, %icmp_ln10_2" [Y.c:10]   --->   Operation 37 'and' 'and_ln10' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_4)   --->   "%and_ln10_1 = and i1 %and_ln10, %icmp_ln10" [Y.c:10]   --->   Operation 38 'and' 'and_ln10_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_4)   --->   "%and_ln10_2 = and i1 %icmp_ln10_4, %icmp_ln10_5" [Y.c:10]   --->   Operation 39 'and' 'and_ln10_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node and_ln10_4)   --->   "%and_ln10_3 = and i1 %and_ln10_2, %icmp_ln10_3" [Y.c:10]   --->   Operation 40 'and' 'and_ln10_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.80ns) (out node of the LUT)   --->   "%and_ln10_4 = and i1 %and_ln10_3, %and_ln10_1" [Y.c:10]   --->   Operation 41 'and' 'and_ln10_4' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.36>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i8 %R_read to i32" [Y.c:15]   --->   Operation 42 'zext' 'zext_ln15' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_2 : Operation 43 [5/5] (7.36ns)   --->   "%tmp = sitofp i32 %zext_ln15 to double" [Y.c:15]   --->   Operation 43 'sitodp' 'tmp' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln15_1 = zext i8 %G_read to i32" [Y.c:15]   --->   Operation 44 'zext' 'zext_ln15_1' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_2 : Operation 45 [5/5] (7.36ns)   --->   "%tmp_4 = sitofp i32 %zext_ln15_1 to double" [Y.c:15]   --->   Operation 45 'sitodp' 'tmp_4' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 7.36>
+ST_3 : Operation 46 [4/5] (7.36ns)   --->   "%tmp = sitofp i32 %zext_ln15 to double" [Y.c:15]   --->   Operation 46 'sitodp' 'tmp' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_3 : Operation 47 [4/5] (7.36ns)   --->   "%tmp_4 = sitofp i32 %zext_ln15_1 to double" [Y.c:15]   --->   Operation 47 'sitodp' 'tmp_4' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 7.36>
+ST_4 : Operation 48 [3/5] (7.36ns)   --->   "%tmp = sitofp i32 %zext_ln15 to double" [Y.c:15]   --->   Operation 48 'sitodp' 'tmp' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 49 [3/5] (7.36ns)   --->   "%tmp_4 = sitofp i32 %zext_ln15_1 to double" [Y.c:15]   --->   Operation 49 'sitodp' 'tmp_4' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 7.36>
+ST_5 : Operation 50 [2/5] (7.36ns)   --->   "%tmp = sitofp i32 %zext_ln15 to double" [Y.c:15]   --->   Operation 50 'sitodp' 'tmp' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_5 : Operation 51 [2/5] (7.36ns)   --->   "%tmp_4 = sitofp i32 %zext_ln15_1 to double" [Y.c:15]   --->   Operation 51 'sitodp' 'tmp_4' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 7.36>
+ST_6 : Operation 52 [1/5] (7.36ns)   --->   "%tmp = sitofp i32 %zext_ln15 to double" [Y.c:15]   --->   Operation 52 'sitodp' 'tmp' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_6 : Operation 53 [1/5] (7.36ns)   --->   "%tmp_4 = sitofp i32 %zext_ln15_1 to double" [Y.c:15]   --->   Operation 53 'sitodp' 'tmp_4' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 8.56>
+ST_7 : Operation 54 [5/5] (8.56ns)   --->   "%tmp_3 = fmul double %tmp, 2.570000e-01" [Y.c:15]   --->   Operation 54 'dmul' 'tmp_3' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 55 [5/5] (8.56ns)   --->   "%tmp_5 = fmul double %tmp_4, 5.040000e-01" [Y.c:15]   --->   Operation 55 'dmul' 'tmp_5' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln15_2 = zext i8 %B_read to i32" [Y.c:15]   --->   Operation 56 'zext' 'zext_ln15_2' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_7 : Operation 57 [5/5] (7.36ns)   --->   "%tmp_7 = sitofp i32 %zext_ln15_2 to double" [Y.c:15]   --->   Operation 57 'sitodp' 'tmp_7' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 8.56>
+ST_8 : Operation 58 [4/5] (8.56ns)   --->   "%tmp_3 = fmul double %tmp, 2.570000e-01" [Y.c:15]   --->   Operation 58 'dmul' 'tmp_3' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 59 [4/5] (8.56ns)   --->   "%tmp_5 = fmul double %tmp_4, 5.040000e-01" [Y.c:15]   --->   Operation 59 'dmul' 'tmp_5' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 60 [4/5] (7.36ns)   --->   "%tmp_7 = sitofp i32 %zext_ln15_2 to double" [Y.c:15]   --->   Operation 60 'sitodp' 'tmp_7' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 8.56>
+ST_9 : Operation 61 [3/5] (8.56ns)   --->   "%tmp_3 = fmul double %tmp, 2.570000e-01" [Y.c:15]   --->   Operation 61 'dmul' 'tmp_3' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 62 [3/5] (8.56ns)   --->   "%tmp_5 = fmul double %tmp_4, 5.040000e-01" [Y.c:15]   --->   Operation 62 'dmul' 'tmp_5' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 63 [3/5] (7.36ns)   --->   "%tmp_7 = sitofp i32 %zext_ln15_2 to double" [Y.c:15]   --->   Operation 63 'sitodp' 'tmp_7' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 8.56>
+ST_10 : Operation 64 [2/5] (8.56ns)   --->   "%tmp_3 = fmul double %tmp, 2.570000e-01" [Y.c:15]   --->   Operation 64 'dmul' 'tmp_3' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 65 [2/5] (8.56ns)   --->   "%tmp_5 = fmul double %tmp_4, 5.040000e-01" [Y.c:15]   --->   Operation 65 'dmul' 'tmp_5' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 66 [2/5] (7.36ns)   --->   "%tmp_7 = sitofp i32 %zext_ln15_2 to double" [Y.c:15]   --->   Operation 66 'sitodp' 'tmp_7' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 8.56>
+ST_11 : Operation 67 [1/5] (8.56ns)   --->   "%tmp_3 = fmul double %tmp, 2.570000e-01" [Y.c:15]   --->   Operation 67 'dmul' 'tmp_3' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 68 [1/5] (8.56ns)   --->   "%tmp_5 = fmul double %tmp_4, 5.040000e-01" [Y.c:15]   --->   Operation 68 'dmul' 'tmp_5' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 69 [1/5] (7.36ns)   --->   "%tmp_7 = sitofp i32 %zext_ln15_2 to double" [Y.c:15]   --->   Operation 69 'sitodp' 'tmp_7' <Predicate = (!and_ln10_4)> <Delay = 7.36> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 4> <II = 1> <Delay = 7.36> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 8.56>
+ST_12 : Operation 70 [5/5] (7.05ns)   --->   "%tmp_6 = fadd double %tmp_3, %tmp_5" [Y.c:15]   --->   Operation 70 'dadd' 'tmp_6' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 71 [5/5] (8.56ns)   --->   "%tmp_8 = fmul double %tmp_7, 9.800000e-02" [Y.c:15]   --->   Operation 71 'dmul' 'tmp_8' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 8.56>
+ST_13 : Operation 72 [4/5] (7.05ns)   --->   "%tmp_6 = fadd double %tmp_3, %tmp_5" [Y.c:15]   --->   Operation 72 'dadd' 'tmp_6' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 73 [4/5] (8.56ns)   --->   "%tmp_8 = fmul double %tmp_7, 9.800000e-02" [Y.c:15]   --->   Operation 73 'dmul' 'tmp_8' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 8.56>
+ST_14 : Operation 74 [3/5] (7.05ns)   --->   "%tmp_6 = fadd double %tmp_3, %tmp_5" [Y.c:15]   --->   Operation 74 'dadd' 'tmp_6' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 75 [3/5] (8.56ns)   --->   "%tmp_8 = fmul double %tmp_7, 9.800000e-02" [Y.c:15]   --->   Operation 75 'dmul' 'tmp_8' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 8.56>
+ST_15 : Operation 76 [2/5] (7.05ns)   --->   "%tmp_6 = fadd double %tmp_3, %tmp_5" [Y.c:15]   --->   Operation 76 'dadd' 'tmp_6' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 77 [2/5] (8.56ns)   --->   "%tmp_8 = fmul double %tmp_7, 9.800000e-02" [Y.c:15]   --->   Operation 77 'dmul' 'tmp_8' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 8.56>
+ST_16 : Operation 78 [1/5] (7.05ns)   --->   "%tmp_6 = fadd double %tmp_3, %tmp_5" [Y.c:15]   --->   Operation 78 'dadd' 'tmp_6' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 79 [1/5] (8.56ns)   --->   "%tmp_8 = fmul double %tmp_7, 9.800000e-02" [Y.c:15]   --->   Operation 79 'dmul' 'tmp_8' <Predicate = (!and_ln10_4)> <Delay = 8.56> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 4> <II = 1> <Delay = 8.56> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 7.05>
+ST_17 : Operation 80 [5/5] (7.05ns)   --->   "%tmp_9 = fadd double %tmp_6, %tmp_8" [Y.c:15]   --->   Operation 80 'dadd' 'tmp_9' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 7.05>
+ST_18 : Operation 81 [4/5] (7.05ns)   --->   "%tmp_9 = fadd double %tmp_6, %tmp_8" [Y.c:15]   --->   Operation 81 'dadd' 'tmp_9' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 7.05>
+ST_19 : Operation 82 [3/5] (7.05ns)   --->   "%tmp_9 = fadd double %tmp_6, %tmp_8" [Y.c:15]   --->   Operation 82 'dadd' 'tmp_9' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 7.05>
+ST_20 : Operation 83 [2/5] (7.05ns)   --->   "%tmp_9 = fadd double %tmp_6, %tmp_8" [Y.c:15]   --->   Operation 83 'dadd' 'tmp_9' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 7.05>
+ST_21 : Operation 84 [1/5] (7.05ns)   --->   "%tmp_9 = fadd double %tmp_6, %tmp_8" [Y.c:15]   --->   Operation 84 'dadd' 'tmp_9' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 7.05>
+ST_22 : Operation 85 [5/5] (7.05ns)   --->   "%x_assign = fadd double %tmp_9, 1.600000e+01" [Y.c:15]   --->   Operation 85 'dadd' 'x_assign' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 7.05>
+ST_23 : Operation 86 [4/5] (7.05ns)   --->   "%x_assign = fadd double %tmp_9, 1.600000e+01" [Y.c:15]   --->   Operation 86 'dadd' 'x_assign' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 7.05>
+ST_24 : Operation 87 [3/5] (7.05ns)   --->   "%x_assign = fadd double %tmp_9, 1.600000e+01" [Y.c:15]   --->   Operation 87 'dadd' 'x_assign' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 7.05>
+ST_25 : Operation 88 [2/5] (7.05ns)   --->   "%x_assign = fadd double %tmp_9, 1.600000e+01" [Y.c:15]   --->   Operation 88 'dadd' 'x_assign' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 7.05>
+ST_26 : Operation 89 [1/5] (7.05ns)   --->   "%x_assign = fadd double %tmp_9, 1.600000e+01" [Y.c:15]   --->   Operation 89 'dadd' 'x_assign' <Predicate = (!and_ln10_4)> <Delay = 7.05> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 90 [1/1] (0.00ns)   --->   "%p_Val2_s = bitcast double %x_assign to i64" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:475->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:66->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 90 'bitcast' 'p_Val2_s' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_26 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_V = call i11 @_ssdm_op_PartSelect.i11.i64.i32.i32(i64 %p_Val2_s, i32 52, i32 62) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:477->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:66->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 91 'partselect' 'tmp_V' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_26 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_V_1 = trunc i64 %p_Val2_s to i52" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:478->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:66->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 92 'trunc' 'tmp_V_1' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+
+State 27 <SV = 26> <Delay = 6.17>
+ST_27 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %R) nounwind, !map !7"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %G) nounwind, !map !13"   --->   Operation 94 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %B) nounwind, !map !17"   --->   Operation 95 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 0) nounwind, !map !21"   --->   Operation 96 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([2 x i8]* @Y_str) nounwind"   --->   Operation 97 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 98 [1/1] (0.00ns)   --->   "%mantissa_V = call i54 @_ssdm_op_BitConcatenate.i54.i1.i52.i1(i1 true, i52 %tmp_V_1, i1 false)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 98 'bitconcatenate' 'mantissa_V' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%zext_ln682 = zext i54 %mantissa_V to i113" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 99 'zext' 'zext_ln682' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 100 [1/1] (0.00ns)   --->   "%zext_ln502 = zext i11 %tmp_V to i12" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 100 'zext' 'zext_ln502' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 101 [1/1] (1.67ns)   --->   "%add_ln502 = add i12 -1023, %zext_ln502" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 101 'add' 'add_ln502' <Predicate = (!and_ln10_4)> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 102 [1/1] (0.00ns)   --->   "%isNeg = call i1 @_ssdm_op_BitSelect.i1.i12.i32(i12 %add_ln502, i32 11)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 102 'bitselect' 'isNeg' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 103 [1/1] (1.67ns)   --->   "%sub_ln1311 = sub i11 1023, %tmp_V" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 103 'sub' 'sub_ln1311' <Predicate = (!and_ln10_4)> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln1311 = sext i11 %sub_ln1311 to i12" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 104 'sext' 'sext_ln1311' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 105 [1/1] (1.00ns)   --->   "%ush = select i1 %isNeg, i12 %sext_ln1311, i12 %add_ln502" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 105 'select' 'ush' <Predicate = (!and_ln10_4)> <Delay = 1.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_27 : Operation 106 [1/1] (0.00ns)   --->   "%sext_ln1311_1 = sext i12 %ush to i32" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 106 'sext' 'sext_ln1311_1' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%zext_ln1287 = zext i32 %sext_ln1311_1 to i113" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 107 'zext' 'zext_ln1287' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%zext_ln1285 = zext i32 %sext_ln1311_1 to i54" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 108 'zext' 'zext_ln1285' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 109 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%r_V = lshr i54 %mantissa_V, %zext_ln1285" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 109 'lshr' 'r_V' <Predicate = (!and_ln10_4)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%r_V_1 = shl i113 %zext_ln682, %zext_ln1287" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 110 'shl' 'r_V_1' <Predicate = (!and_ln10_4)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 3.49> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i54.i32(i54 %r_V, i32 53)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:74->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 111 'bitselect' 'tmp_10' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%zext_ln662 = zext i1 %tmp_10 to i8" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:74->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 112 'zext' 'zext_ln662' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 113 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%tmp_2 = call i8 @_ssdm_op_PartSelect.i8.i113.i32.i32(i113 %r_V_1, i32 53, i32 60)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:74->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 113 'partselect' 'tmp_2' <Predicate = (!and_ln10_4)> <Delay = 0.00>
+ST_27 : Operation 114 [1/1] (0.00ns) (grouped into LUT with out node select_ln10)   --->   "%val_V = select i1 %isNeg, i8 %zext_ln662, i8 %tmp_2" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15]   --->   Operation 114 'select' 'val_V' <Predicate = (!and_ln10_4)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_27 : Operation 115 [1/1] (3.49ns) (out node of the LUT)   --->   "%select_ln10 = select i1 %and_ln10_4, i8 62, i8 %val_V" [Y.c:10]   --->   Operation 115 'select' 'select_ln10' <Predicate = true> <Delay = 3.49> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_27 : Operation 116 [1/1] (0.00ns)   --->   "ret i8 %select_ln10" [Y.c:19]   --->   Operation 116 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.01ns
+The critical path consists of the following:
+	wire read on port 'B' (Y.c:5) [9]  (0 ns)
+	'icmp' operation ('icmp_ln10_5', Y.c:10) [17]  (1.21 ns)
+	'and' operation ('and_ln10_2', Y.c:10) [20]  (0 ns)
+	'and' operation ('and_ln10_3', Y.c:10) [21]  (0 ns)
+	'and' operation ('and_ln10_4', Y.c:10) [22]  (0.8 ns)
+
+ <State 2>: 7.37ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', Y.c:15) [24]  (7.37 ns)
+
+ <State 3>: 7.37ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', Y.c:15) [24]  (7.37 ns)
+
+ <State 4>: 7.37ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', Y.c:15) [24]  (7.37 ns)
+
+ <State 5>: 7.37ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', Y.c:15) [24]  (7.37 ns)
+
+ <State 6>: 7.37ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', Y.c:15) [24]  (7.37 ns)
+
+ <State 7>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', Y.c:15) [25]  (8.57 ns)
+
+ <State 8>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', Y.c:15) [25]  (8.57 ns)
+
+ <State 9>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', Y.c:15) [25]  (8.57 ns)
+
+ <State 10>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', Y.c:15) [25]  (8.57 ns)
+
+ <State 11>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', Y.c:15) [25]  (8.57 ns)
+
+ <State 12>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', Y.c:15) [32]  (8.57 ns)
+
+ <State 13>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', Y.c:15) [32]  (8.57 ns)
+
+ <State 14>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', Y.c:15) [32]  (8.57 ns)
+
+ <State 15>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', Y.c:15) [32]  (8.57 ns)
+
+ <State 16>: 8.57ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_8', Y.c:15) [32]  (8.57 ns)
+
+ <State 17>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_9', Y.c:15) [33]  (7.06 ns)
+
+ <State 18>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_9', Y.c:15) [33]  (7.06 ns)
+
+ <State 19>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_9', Y.c:15) [33]  (7.06 ns)
+
+ <State 20>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_9', Y.c:15) [33]  (7.06 ns)
+
+ <State 21>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_9', Y.c:15) [33]  (7.06 ns)
+
+ <State 22>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('x', Y.c:15) [34]  (7.06 ns)
+
+ <State 23>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('x', Y.c:15) [34]  (7.06 ns)
+
+ <State 24>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('x', Y.c:15) [34]  (7.06 ns)
+
+ <State 25>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('x', Y.c:15) [34]  (7.06 ns)
+
+ <State 26>: 7.06ns
+The critical path consists of the following:
+	'dadd' operation ('x', Y.c:15) [34]  (7.06 ns)
+
+ <State 27>: 6.18ns
+The critical path consists of the following:
+	'add' operation ('sh', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15) [41]  (1.68 ns)
+	'select' operation ('sh', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15) [45]  (1 ns)
+	'shl' operation ('r.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15) [50]  (0 ns)
+	'select' operation ('val.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67->Y.c:15) [54]  (0 ns)
+	'select' operation ('select_ln10', Y.c:10) [55]  (3.5 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

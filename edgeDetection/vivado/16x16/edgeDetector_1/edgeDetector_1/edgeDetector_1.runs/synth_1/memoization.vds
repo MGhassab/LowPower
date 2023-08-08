@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug  6 14:29:02 2023
+# Process ID: 4284
+# Current directory: C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.runs/synth_1
+# Command line: vivado.exe -log memoization.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source memoization.tcl
+# Log file: C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.runs/synth_1/memoization.vds
+# Journal file: C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source memoization.tcl -notrace
+Command: synth_design -top memoization -part xc7s100fgga676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10228 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 566.430 ; gain = 186.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'memoization' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:41]
+WARNING: [Synth 8-614] signal 'last_ram_addr' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-614] signal 'threshold' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-614] signal 'data_in_mem' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-614] signal 'column_cntr_reg' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-614] signal 'temp4' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-614] signal 'temp1' is read in the process but is not in the sensitivity list [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:153]
+WARNING: [Synth 8-6014] Unused sequential element trigger_reg_reg was removed.  [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'memoization' (1#1) [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:41]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[7]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[6]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[5]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[4]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[3]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[2]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[1]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 629.484 ; gain = 249.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 629.484 ; gain = 249.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-2
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s100fgga676-2
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 629.484 ; gain = 249.863
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register add_inram_next_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-327] inferring latch for variable 'trigger_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:130]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:201]
+WARNING: [Synth 8-327] inferring latch for variable 'state_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:126]
+WARNING: [Synth 8-327] inferring latch for variable 'diff_cntr_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:127]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_6_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:230]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_8_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_4_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:228]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_2_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:225]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_5_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:229]
+WARNING: [Synth 8-327] inferring latch for variable 'add_inram_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'add_inram_next_reg_rep' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'writeSignal_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:129]
+WARNING: [Synth 8-327] inferring latch for variable 'data_in_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:134]
+WARNING: [Synth 8-327] inferring latch for variable 'column_cntr_next_reg' [C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.srcs/sources_1/new/memoization.vhd:131]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 629.484 ; gain = 249.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               7K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module memoization 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               7K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design memoization has unconnected port row[7]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[6]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[5]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[4]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[3]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[2]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[1]
+WARNING: [Synth 8-3331] design memoization has unconnected port row[0]
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[0]' (LD) to 'add_inram_next_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[1]' (LD) to 'add_inram_next_reg[1]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[2]' (LD) to 'add_inram_next_reg[2]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[3]' (LD) to 'add_inram_next_reg[3]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[4]' (LD) to 'add_inram_next_reg[4]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[5]' (LD) to 'add_inram_next_reg[5]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[6]' (LD) to 'add_inram_next_reg[6]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[7]' (LD) to 'add_inram_next_reg[7]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[14]' (LD) to 'add_inram_next_reg[14]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[15]' (LD) to 'add_inram_next_reg[15]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[13]' (LD) to 'add_inram_next_reg[13]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[12]' (LD) to 'add_inram_next_reg[12]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[11]' (LD) to 'add_inram_next_reg[11]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[10]' (LD) to 'add_inram_next_reg[10]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[9]' (LD) to 'add_inram_next_reg[9]'
+INFO: [Synth 8-3886] merging instance 'add_inram_next_reg_rep[8]' (LD) to 'add_inram_next_reg[8]'
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[15]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[14]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[13]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[12]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[11]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[10]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[9]) is unused and will be removed from module memoization.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[8]) is unused and will be removed from module memoization.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------+---------------+----------------+
+|Module Name | RTL Object      | Depth x Width | Implemented As | 
++------------+-----------------+---------------+----------------+
+|memoization | p_0_out         | 256x8         | LUT            | 
+|memoization | p_0_out         | 256x8         | LUT            | 
+|memoization | data_in_mem_reg | 256x8         | Block RAM      | 
++------------+-----------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                                                                | 
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+|memoization | in_ram_reg | Implied   | 1 K x 8              | RAM16X1D x 8  RAM32X1D x 8  RAM64X1D x 104  RAM128X1D x 56  RAM64M x 96   | 
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_3/data_in_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives                                                                | 
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+|memoization | in_ram_reg | Implied   | 1 K x 8              | RAM16X1D x 8  RAM32X1D x 8  RAM64X1D x 104  RAM128X1D x 56  RAM64M x 96   | 
++------------+------------+-----------+----------------------+---------------------------------------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance data_in_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    29|
+|3     |LUT1      |     7|
+|4     |LUT2      |    46|
+|5     |LUT3      |    41|
+|6     |LUT4      |    42|
+|7     |LUT5      |    62|
+|8     |LUT6      |   252|
+|9     |MUXF7     |    46|
+|10    |MUXF8     |    22|
+|11    |RAM128X1D |    56|
+|12    |RAM16X1D  |     8|
+|13    |RAM32X1D  |     8|
+|14    |RAM64M    |    96|
+|15    |RAM64X1D  |   104|
+|16    |RAMB18E1  |     1|
+|17    |FDCE      |    74|
+|18    |LD        |   100|
+|19    |IBUF      |    19|
+|20    |OBUF      |     9|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1024|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 798.168 ; gain = 418.547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 470 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'memoization' is not ideal for floorplanning, since the cellview 'memoization' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 372 instances were transformed.
+  LD => LDCE: 100 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 56 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 96 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 104 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 901.004 ; gain = 545.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 901.004 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ESRLab-04/Desktop/edgeDetector_1/edgeDetector_1/edgeDetector_1.runs/synth_1/memoization.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file memoization_utilization_synth.rpt -pb memoization_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  6 14:29:36 2023...

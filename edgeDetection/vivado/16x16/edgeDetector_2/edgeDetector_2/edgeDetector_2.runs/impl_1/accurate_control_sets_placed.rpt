@@ -1,0 +1,111 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Aug  6 14:58:39 2023
+| Host         : DESKTOP-NSCBN50 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file accurate_control_sets_placed.rpt
+| Design       : accurate
+| Device       : xc7s100
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              85 |           59 |
+| No           | No                    | Yes                    |              53 |           25 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+------------------------------------+------------------+------------------+----------------+
+|           Clock Signal           |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------+------------------------------------+------------------+------------------+----------------+
+|  writeSignal_next_reg_i_2_n_1    |                                    |                  |                1 |              1 |
+|  trigger_next_reg_i_1_n_1        |                                    |                  |                1 |              1 |
+|  state_next                      |                                    |                  |                1 |              3 |
+|  column_cntr_next_reg[7]_i_2_n_1 |                                    |                  |                3 |              8 |
+|  data_in_reg[7]_i_2_n_1          |                                    |                  |                5 |              8 |
+|  add_inram_next_reg[15]_i_2_n_1  |                                    |                  |               10 |             16 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_31_0_0_i_1_n_1        |                  |                3 |             16 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_15_0_0_i_1_n_1        |                  |                3 |             16 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_127_0_0_i_1_n_1       |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_128_255_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_256_383_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_384_511_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_768_895_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_640_767_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_512_639_0_0_i_1_n_1     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_0_63_0_2_i_1_n_1     |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_256_319_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_448_511_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_128_191_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_704_767_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_512_575_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_832_895_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_576_639_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_640_703_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_768_831_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_64_127_0_2_i_1_n_1   |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_960_1023_0_2_i_1_n_1 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_192_255_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_320_383_0_2_i_1_n_1  |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_384_447_0_2_i_1_n_1  |                  |                9 |             36 |
+|  n_0_236_BUFG                    |                                    |                  |               38 |             48 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_63_0_0_i_1_n_1        |                  |               13 |             52 |
+|  clk_IBUF_BUFG                   |                                    | rst_IBUF         |               25 |             53 |
++----------------------------------+------------------------------------+------------------+------------------+----------------+
+
+

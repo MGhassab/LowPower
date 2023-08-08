@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="edgeDetecion" solutionName="solution1" date="2023-08-06T16:53:19.168+0430"/>
+        <logs message="ERROR: [COSIM 212-344] Rtl simulation failed." projectName="edgeDetecion" solutionName="solution1" date="2023-08-06T16:53:19.152+0430"/>
+        <logs message="ERROR: [COSIM 212-303] Aborting co-simulation: RTL simulation failed.  " projectName="edgeDetecion" solutionName="solution1" date="2023-08-06T16:53:19.121+0430"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_filter/out' to 'sobel_filter/out_r' to avoid the conflict with HDL keywords or other object names." projectName="edgeDetecion" solutionName="solution1" date="2023-08-06T16:50:59.034+0430" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_filter/in' to 'sobel_filter/in_r' to avoid the conflict with HDL keywords or other object names." projectName="edgeDetecion" solutionName="solution1" date="2023-08-06T16:50:59.019+0430" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,878 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug  6 20:11:00 2023
+# Process ID: 9268
+# Current directory: C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1
+# Command line: vivado.exe -log design_1_Cr_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Cr_0_0.tcl
+# Log file: C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/design_1_Cr_0_0.vds
+# Journal file: C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Cr_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzY'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzCr/Cr/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ESRLab-04/Desktop/YCbCrHLS/SynthzCb/SynthzCb/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_Cr_0_0 -part xc7s100fgga676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Device 21-403] Loading part xc7s100fgga676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11040 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 816.582 ; gain = 184.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Cr_0_0' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ip/design_1_Cr_0_0/synth/design_1_Cr_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'Cr' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:12' bound to instance 'U0' of component 'Cr' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ip/design_1_Cr_0_0/synth/design_1_Cr_0_0.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'Cr' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:27]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:95]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:98]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:102]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:105]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:109]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:113]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:117]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:122]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:127]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:133]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:135]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:137]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:153]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_dadddsub_64ns_bkb' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dadddsub_64ns_bkb.vhd:8' bound to instance 'Cr_dadddsub_64ns_bkb_U1' of component 'Cr_dadddsub_64ns_bkb' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'Cr_dadddsub_64ns_bkb' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dadddsub_64ns_bkb.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_ap_dadddsub_3_no_dsp_64' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dadddsub_3_no_dsp_64.vhd:59' bound to instance 'Cr_ap_dadddsub_3_no_dsp_64_u' of component 'Cr_ap_dadddsub_3_no_dsp_64' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dadddsub_64ns_bkb.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Cr_ap_dadddsub_3_no_dsp_64' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dadddsub_3_no_dsp_64.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dadddsub_3_no_dsp_64.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'Cr_ap_dadddsub_3_no_dsp_64' (26#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dadddsub_3_no_dsp_64.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'Cr_dadddsub_64ns_bkb' (27#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dadddsub_64ns_bkb.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_dmul_64ns_64nscud' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:8' bound to instance 'Cr_dmul_64ns_64nscud_U2' of component 'Cr_dmul_64ns_64nscud' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'Cr_dmul_64ns_64nscud' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_ap_dmul_3_max_dsp_64' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dmul_3_max_dsp_64.vhd:59' bound to instance 'Cr_ap_dmul_3_max_dsp_64_u' of component 'Cr_ap_dmul_3_max_dsp_64' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'Cr_ap_dmul_3_max_dsp_64' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dmul_3_max_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dmul_3_max_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'Cr_ap_dmul_3_max_dsp_64' (35#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_dmul_3_max_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Cr_dmul_64ns_64nscud' (36#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_dmul_64ns_64nscud' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:8' bound to instance 'Cr_dmul_64ns_64nscud_U3' of component 'Cr_dmul_64ns_64nscud' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:258]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_sitodp_32ns_64dEe' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:8' bound to instance 'Cr_sitodp_32ns_64dEe_U4' of component 'Cr_sitodp_32ns_64dEe' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'Cr_sitodp_32ns_64dEe' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_ap_sitodp_3_no_dsp_32' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_sitodp_3_no_dsp_32.vhd:59' bound to instance 'Cr_ap_sitodp_3_no_dsp_32_u' of component 'Cr_ap_sitodp_3_no_dsp_32' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Cr_ap_sitodp_3_no_dsp_32' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_sitodp_3_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_sitodp_3_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'Cr_ap_sitodp_3_no_dsp_32' (39#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/ip/Cr_ap_sitodp_3_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Cr_sitodp_32ns_64dEe' (40#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Cr_sitodp_32ns_64dEe' declared at 'c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:8' bound to instance 'Cr_sitodp_32ns_64dEe_U5' of component 'Cr_sitodp_32ns_64dEe' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:286]
+INFO: [Synth 8-256] done synthesizing module 'Cr' (41#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Cr_0_0' (42#1) [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ip/design_1_Cr_0_0/synth/design_1_Cr_0_0.vhd:71]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized107 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized107 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized107 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized107 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized107 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized109 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized109 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized109 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized15 has unconnected port B[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized61 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized61 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized16 has unconnected port B[26]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized59 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized59 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized59 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized59 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized59 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 996.328 ; gain = 364.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 996.328 ; gain = 364.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 996.328 ; gain = 364.492
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 991 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ip/design_1_Cr_0_0/constraints/Cr_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ip/design_1_Cr_0_0/constraints/Cr_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1060.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1068.344 ; gain = 8.203
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.344 ; gain = 436.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.344 ; gain = 436.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.344 ; gain = 436.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1068.344 ; gain = 436.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized0) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized36) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized36) to 'Cr_dmul_64ns_64nscud:/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized36) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized36) to 'Cr_sitodp_32ns_64dEe:/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'Cr_dmul_64ns_64nscud_U2/ce_r_reg' into 'Cr_dadddsub_64ns_bkb_U1/ce_r_reg' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:70]
+INFO: [Synth 8-4471] merging register 'Cr_dmul_64ns_64nscud_U3/ce_r_reg' into 'Cr_dadddsub_64ns_bkb_U1/ce_r_reg' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_dmul_64ns_64nscud.vhd:70]
+INFO: [Synth 8-4471] merging register 'Cr_sitodp_32ns_64dEe_U4/ce_r_reg' into 'Cr_dadddsub_64ns_bkb_U1/ce_r_reg' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:61]
+INFO: [Synth 8-4471] merging register 'Cr_sitodp_32ns_64dEe_U5/ce_r_reg' into 'Cr_dadddsub_64ns_bkb_U1/ce_r_reg' [c:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.srcs/sources_1/bd/design_1/ipshared/402e/hdl/vhdl/Cr_sitodp_32ns_64dEe.vhd:61]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_sitodp_32ns_64dEe_U5/Cr_ap_sitodp_3_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_sitodp_32ns_64dEe_U4/Cr_ap_sitodp_3_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_sitodp_32ns_64dEe_U5/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'U0/Cr_sitodp_32ns_64dEe_U5/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_sitodp_32ns_64dEe_U4/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'U0/Cr_sitodp_32ns_64dEe_U4/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[63] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[5]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[2]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[3]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[11] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[6]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[7]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[8] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[9]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[10] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[12]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[13]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[14]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[32] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[18] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[19]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[20]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[21]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[22] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[23]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[24] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[25]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[34]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[28] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[29]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[32]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[32]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[36]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[33] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[53] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[34] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[37] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[39] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[41] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[42] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[47] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[48] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[49] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U3/din1_buf1_reg[50] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[52] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[53]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[34]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[54]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[36]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[55] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[56] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[58] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[59] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[60] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[62] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[34]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[35]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[35]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[40]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[36]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[38] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[39]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[40]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[42]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[41] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[42]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[45]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[43] )
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[44]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[50]'
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[45]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[48] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[50]' (FD) to 'U0/Cr_dmul_64ns_64nscud_U2/din1_buf1_reg[51]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1068.344 ; gain = 436.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1111.270 ; gain = 479.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1122.406 ; gain = 490.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1137.566 ; gain = 505.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    19|
+|2     |DSP48E1   |     4|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     2|
+|5     |DSP48E1_3 |     2|
+|6     |DSP48E1_4 |     2|
+|7     |DSP48E1_5 |     2|
+|8     |DSP48E1_6 |     2|
+|9     |DSP48E1_7 |     2|
+|10    |DSP48E1_8 |     2|
+|11    |DSP48E1_9 |     2|
+|12    |LUT1      |    37|
+|13    |LUT2      |   112|
+|14    |LUT3      |   241|
+|15    |LUT4      |   335|
+|16    |LUT5      |   147|
+|17    |LUT6      |   563|
+|18    |MUXCY     |   537|
+|19    |MUXF7     |    20|
+|20    |MUXF8     |     1|
+|21    |XORCY     |   381|
+|22    |FDRE      |  1468|
+|23    |FDSE      |     4|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1151.363 ; gain = 519.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 460 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 1151.363 ; gain = 447.512
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1151.363 ; gain = 519.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 980 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1163.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 144 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 144 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+246 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1163.449 ; gain = 771.582
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1163.449 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/design_1_Cr_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Cr_0_0, cache-ID = 0a7e54b1c100f6b9
+INFO: [Coretcl 2-1174] Renamed 246 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1163.449 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ESRLab-04/Desktop/vivado/YCbCr/YCbCr.runs/design_1_Cr_0_0_synth_1/design_1_Cr_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Cr_0_0_utilization_synth.rpt -pb design_1_Cr_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  6 20:12:27 2023...

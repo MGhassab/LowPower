@@ -1,0 +1,606 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 07/29/2023 06:29:07 PM
+-- Design Name: 
+-- Module Name: memoization_TB - memoization_TB_beh
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity accurate_TB is
+--  Port ( );
+end accurate_TB;
+
+architecture accurate_TB_beh of accurate_TB is
+constant    T       :   time    :=  10 ns;
+   signal clk, rst: std_logic;
+   signal start   : std_logic ;
+   signal trigger   : std_logic ;
+   signal input   : std_logic_vector(7 downto 0);
+   signal row     : std_logic_vector(7 downto 0);
+   signal column  : std_logic_vector(7 downto 0);
+   signal output_accurate  : std_logic_vector(7 downto 0);
+begin
+  accurate:     entity  work.accurate(accurate_beh)
+               Port map(
+                     clk    => clk,
+                     rst    => rst,
+                     start  => start,
+                     input  => input,
+                     row    => row,
+                     column => column,
+                     trigger => trigger,
+                     output => output_accurate 
+              );
+
+                      
+ -- Clock process definitions
+ clk_process :process
+ begin
+ clk <= '0';
+ wait for T/2;
+ clk <= '1';
+ wait for T/2;
+ end process;
+ 
+ 
+ -- Stimulus process
+ stim_proc: process
+ begin
+  row    <= std_logic_vector(to_unsigned(16,8));
+  column <= std_logic_vector(to_unsigned(16,8));
+ start  <= '0';
+  rst <= '1';
+  wait for  T;
+   -- hold reset state for 10 ns.
+  rst <= '0';
+  wait for  T;
+  start  <= '1';
+
+  
+  ---------------    Diff INPUT  -----------------
+ wait for  T;
+  start  <= '0';
+  input <= std_logic_vector(to_unsigned(186,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(171,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(158,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(170,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(169,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(165,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(222,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(202,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(193,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(166,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(151,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(112,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(140,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(95,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(89,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(116,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(176,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(164,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(151,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(162,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(157,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(189,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(225,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(203,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(194,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(172,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(151,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(113,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(118,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(98,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(118,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(121,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(162,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(154,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(146,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(150,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(150,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(184,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(222,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(206,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(194,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(151,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(117,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(100,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(108,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(135,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(152,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(150,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(133,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(139,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(130,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(227,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(198,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(115,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(82,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(94,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(127,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(126,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(130,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(102,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(154,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(146,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(130,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(157,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(202,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(187,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(99,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(67,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(83,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(76,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(79,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(127,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(101,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(87,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(141,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(135,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(145,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(179,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(197,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(159,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(102,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(85,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(82,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(83,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(78,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(64,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(96,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(105,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(79,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(81,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(129,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(179,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(187,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(144,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(108,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(88,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(88,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(76,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(62,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(72,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(93,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(75,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(90,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(114,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(123,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(119,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(143,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(182,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(166,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(144,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(115,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(113,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(73,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(63,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(70,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(97,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(96,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(105,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(132,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(129,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(128,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(132,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(141,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(151,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(137,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(105,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(104,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(79,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(56,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(74,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(121,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(129,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(124,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(123,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(143,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(145,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(131,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(132,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(110,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(150,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(132,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(114,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(126,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(127,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(119,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(123,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(144,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(139,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(133,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(148,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(138,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(138,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(128,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(107,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(125,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(153,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(164,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(187,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(169,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(156,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(153,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(150,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(114,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(131,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(135,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(127,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(124,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(139,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(129,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(113,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(119,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(165,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(195,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(176,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(164,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(147,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(163,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(168,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(125,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(117,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(119,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(117,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(108,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(120,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(158,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(172,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(158,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(169,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(165,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(159,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(194,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(161,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(120,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(136,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(129,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(123,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(115,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(156,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(170,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(146,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(132,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(168,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(167,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(182,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(176,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(162,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(164,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(137,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(134,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(128,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(120,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(105,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(165,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(168,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(180,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(143,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(111,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(131,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(170,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(191,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(186,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(140,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(183,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(113,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(120,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(106,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(72,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(115,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(184,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(176,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(159,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(130,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(111,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(84,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(172,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(161,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(148,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(143,8));
+  wait for  T;
+  input <= std_logic_vector(to_unsigned(140,8));
+  wait for  T;
+  wait for  300*T;
+
+
+  
+  end process;
+end accurate_TB_beh;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used." projectName="Cr" solutionName="solution1" date="2023-08-06T20:55:22.786+0430" type="Warning"/>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used." projectName="Cr" solutionName="solution1" date="2023-08-06T20:55:22.007+0430" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Cr_ap_dadddsub_3_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Cr" solutionName="solution1" date="2023-08-06T20:56:03.701+0430" type="Warning"/>
+        <logs message="WARNING: [HLS 200-400] 'full_dsp' is not a valid style for spartan7 'DAddSub' (valid styles: no_dsp). Default style 'no_dsp' will be used.&#xD;&#xA;&#xD;&#xA;****** Vivado v2019.1 (64-bit)&#xD;&#xA;  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019&#xD;&#xA;  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019&#xD;&#xA;    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;source run_ippack.tcl -notrace" projectName="Cr" solutionName="solution1" date="2023-08-06T20:55:59.608+0430" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

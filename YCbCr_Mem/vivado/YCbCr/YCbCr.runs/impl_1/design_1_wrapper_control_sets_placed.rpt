@@ -1,0 +1,137 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Aug  6 20:15:00 2023
+| Host         : DESKTOP-NSCBN50 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7s100
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    59 |
+|    Minimum number of control sets                        |    59 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   166 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    59 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    47 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1571 |          577 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1267 |          364 |
+| Yes          | No                    | No                     |            1012 |          298 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                 Enable Signal                |                                                                                                  Set/Reset Signal                                                                                                  | Slice Load Count | Bel Load Count |
++-------------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/O[2]                                                                                        |                1 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/O[2]                                                                                        |                2 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q[54]_i_1_n_0 |                1 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/O[2]                                                                                              |                2 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q[54]_i_1_n_0 |                2 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q[54]_i_1_n_0       |                1 |              4 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dmul_64ns_64nscud_U2/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                              |                3 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dmul_64ns_64nscud_U3/Cb_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                              |                4 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dmul_64ns_64ns_cud_U2/Y_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                                |                3 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dmul_64ns_64ns_cud_U3/Y_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                                |                3 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dmul_64ns_64nscud_U2/Cb_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                              |                3 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dmul_64ns_64nscud_U3/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/STATE_DELAY/i_pipe/state_op[0]                                                                              |                3 |             11 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                                            |                4 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                                            |                5 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                                                  |                5 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[7].C_MUX.CARRY_MUX_0                                                 |                5 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[7].C_MUX.CARRY_MUX_0                                           |                5 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[7].C_MUX.CARRY_MUX_0                                           |                5 |             16 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_sitodp_32ns_64dEe_U4/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                            |                8 |             31 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_sitodp_32ns_64dEe_U5/Cb_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                            |                8 |             31 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_sitodp_32ns_64_dEe_U4/Y_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                              |                8 |             31 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_sitodp_32ns_64dEe_U5/Cr_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                            |                8 |             31 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_sitodp_32ns_64_dEe_U5/Y_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                              |                8 |             31 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_sitodp_32ns_64dEe_U4/Cb_ap_sitodp_3_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/ZERO_DELAY/i_pipe/op_state[0]                                                                            |                8 |             31 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/reg_1060                  |                                                                                                                                                                                                                    |               13 |             42 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/tmp_4_reg_356[62]_i_1_n_0 |                                                                                                                                                                                                                    |               10 |             42 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/tmp_4_reg_356[62]_i_1_n_0 |                                                                                                                                                                                                                    |               14 |             42 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/reg_1060                  |                                                                                                                                                                                                                    |               10 |             42 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/reg_1060                   |                                                                                                                                                                                                                    |               11 |             42 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/tmp_4_reg_356[62]_i_1_n_0  |                                                                                                                                                                                                                    |               10 |             42 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dmul_64ns_64nscud_U3/Cb_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                |               15 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dmul_64ns_64ns_cud_U3/Y_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                  |               14 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]_1                                        |               14 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dmul_64ns_64ns_cud_U2/Y_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                  |               14 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dmul_64ns_64nscud_U2/Cb_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                |               15 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dmul_64ns_64nscud_U3/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                |               11 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dmul_64ns_64nscud_U2/Cr_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.EXP/SIG_DELAY/i_pipe/state_op[0]                                                                                |               10 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]_1                                  |               14 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]_1                                  |               14 |             51 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/Cr_dadddsub_64ns_bkb_U1/Cr_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/LRG_RND1_DEL/i_pipe/din1_buf1_reg[61]               |               24 |             53 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/Y_dadd_64ns_64ns_bkb_U1/Y_ap_dadd_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/LRG_RND1_DEL/i_pipe/din1_buf1_reg[61]                     |               24 |             53 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/Cb_dadddsub_64ns_bkb_U1/Cb_ap_dadddsub_3_no_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/LRG_RND1_DEL/i_pipe/din1_buf1_reg[61]               |               24 |             53 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/tmp_5_reg_366[63]_i_1_n_0 |                                                                                                                                                                                                                    |               19 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/tmp_V_reg_371[10]_i_1_n_0 |                                                                                                                                                                                                                    |               25 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/tmp_V_reg_371[10]_i_1_n_0 |                                                                                                                                                                                                                    |               21 |             63 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cr_0/U0/ap_CS_fsm_state22                                                                                                                                                                               |               13 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/tmp_5_reg_366[63]_i_1_n_0  |                                                                                                                                                                                                                    |               18 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/reg_1110                  |                                                                                                                                                                                                                    |               16 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/tmp_5_reg_366[63]_i_1_n_0 |                                                                                                                                                                                                                    |               19 |             63 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Y_0/U0/ap_CS_fsm_reg_n_0_[21]                                                                                                                                                                           |               13 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/tmp_V_reg_371[10]_i_1_n_0  |                                                                                                                                                                                                                    |               21 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/reg_1110                   |                                                                                                                                                                                                                    |               14 |             63 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cr_0/U0/reg_1170                  |                                                                                                                                                                                                                    |               15 |             64 |
+|  ap_clk_IBUF_BUFG | design_1_i/Y_0/U0/reg_1170                   |                                                                                                                                                                                                                    |               19 |             64 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/reg_1170                  |                                                                                                                                                                                                                    |               22 |             64 |
+|  ap_clk_IBUF_BUFG |                                              | design_1_i/Cb_0/U0/ap_CS_fsm_reg_n_0_[21]                                                                                                                                                                          |               13 |             64 |
+|  ap_clk_IBUF_BUFG | design_1_i/Cb_0/U0/reg_1110                  |                                                                                                                                                                                                                    |               21 |             64 |
+|  ap_clk_IBUF_BUFG |                                              | ap_rst_IBUF                                                                                                                                                                                                        |               27 |             87 |
+|  ap_clk_IBUF_BUFG |                                              |                                                                                                                                                                                                                    |              577 |           1571 |
++-------------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

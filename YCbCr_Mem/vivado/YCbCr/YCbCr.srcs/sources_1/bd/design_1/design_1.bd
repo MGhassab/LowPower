@@ -1,0 +1,237 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x36A5F6064C6A88D9",
+      "device": "xc7s100fgga676-2",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Y_0": "",
+      "Cb_0": "",
+      "Cr_0": ""
+    },
+    "interface_ports": {
+      "ap_ctrl": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      },
+      "ap_ctrl_1": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      },
+      "ap_ctrl_2": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "R": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "G": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_return": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_return_1": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_return_2": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Y_0": {
+        "vlnv": "xilinx.com:hls:Y:1.0",
+        "xci_name": "design_1_Y_0_0"
+      },
+      "Cb_0": {
+        "vlnv": "xilinx.com:hls:Cb:1.0",
+        "xci_name": "design_1_Cb_0_0"
+      },
+      "Cr_0": {
+        "vlnv": "xilinx.com:hls:Cr:1.0",
+        "xci_name": "design_1_Cr_0_0"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_1_1": {
+        "interface_ports": [
+          "ap_ctrl_1",
+          "Cb_0/ap_ctrl"
+        ]
+      },
+      "ap_ctrl_2_1": {
+        "interface_ports": [
+          "ap_ctrl_2",
+          "Cr_0/ap_ctrl"
+        ]
+      },
+      "ap_ctrl_1": {
+        "interface_ports": [
+          "ap_ctrl",
+          "Y_0/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_1": {
+        "ports": [
+          "ap_clk",
+          "Cb_0/ap_clk",
+          "Cr_0/ap_clk",
+          "Y_0/ap_clk"
+        ]
+      },
+      "ap_rst_1": {
+        "ports": [
+          "ap_rst",
+          "Cb_0/ap_rst",
+          "Cr_0/ap_rst",
+          "Y_0/ap_rst"
+        ]
+      },
+      "R_1": {
+        "ports": [
+          "R",
+          "Cb_0/R",
+          "Cr_0/R",
+          "Y_0/R"
+        ]
+      },
+      "G_1": {
+        "ports": [
+          "G",
+          "Cb_0/G",
+          "Cr_0/G",
+          "Y_0/G"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "Cb_0/B",
+          "Cr_0/B",
+          "Y_0/B"
+        ]
+      },
+      "Y_0_ap_return": {
+        "ports": [
+          "Y_0/ap_return",
+          "ap_return"
+        ]
+      },
+      "Cb_0_ap_return": {
+        "ports": [
+          "Cb_0/ap_return",
+          "ap_return_1"
+        ]
+      },
+      "Cr_0_ap_return": {
+        "ports": [
+          "Cr_0/ap_return",
+          "ap_return_2"
+        ]
+      }
+    }
+  }
+}

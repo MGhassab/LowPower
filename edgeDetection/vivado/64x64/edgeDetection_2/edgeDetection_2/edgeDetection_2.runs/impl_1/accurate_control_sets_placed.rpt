@@ -1,0 +1,205 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Aug  6 15:31:35 2023
+| Host         : DESKTOP-NSCBN50 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file accurate_control_sets_placed.rpt
+| Design       : accurate
+| Device       : xc7s100
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   127 |
+|    Minimum number of control sets                        |   127 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   127 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   123 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           91 |
+| No           | No                    | Yes                    |             136 |           74 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------------------+------------------+------------------+----------------+
+|           Clock Signal           |            Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------+-------------------------------------+------------------+------------------+----------------+
+|  trigger_next_reg_i_1_n_2        |                                     |                  |                1 |              1 |
+|  writeSignal_next_reg_i_2_n_2    |                                     |                  |                1 |              1 |
+|  state_next                      |                                     |                  |                1 |              3 |
+|  column_cntr_next_reg[7]_i_2_n_2 |                                     |                  |                2 |              8 |
+|  add_inram_next_reg[15]_i_2_n_2  |                                     |                  |                9 |             16 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_15_0_0_i_1_n_2         |                  |                8 |             16 |
+|  clk_IBUF_BUFG                   | in_ram_reg_896_1023_0_0_i_1_n_2     |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2048_2175_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1920_2047_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1792_1919_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2176_2303_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2432_2559_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2560_2687_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2304_2431_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2944_3071_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_256_383_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2816_2943_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_2688_2815_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3072_3199_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3328_3455_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3456_3583_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3200_3327_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_512_639_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3584_3711_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3712_3839_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4096_4223_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3968_4095_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_384_511_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4224_4351_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4480_4607_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4608_4735_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4352_4479_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4736_4863_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_768_895_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_0_127_0_0_i_1_n_2        |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1024_1151_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1152_1279_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1280_1407_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1408_1535_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_3840_3967_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1536_1663_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_1664_1791_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_4864_4991_0_0_i_1_n_2    |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_640_767_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_128_255_0_0_i_1_n_2      |                  |                8 |             32 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1344_1407_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1472_1535_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1664_1727_0_2_i_1_n_2 |                  |               12 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1728_1791_0_2_i_1_n_2 |                  |               12 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1536_1599_0_2_i_1_n_2 |                  |               12 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1600_1663_0_2_i_1_n_2 |                  |               12 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1408_1471_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1856_1919_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1792_1855_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1984_2047_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2048_2111_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1920_1983_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2112_2175_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_192_255_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2496_2559_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2432_2495_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2560_2623_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2176_2239_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2368_2431_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2240_2303_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2304_2367_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2624_2687_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2880_2943_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_256_319_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2944_3007_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2816_2879_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2752_2815_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_2688_2751_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_320_383_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3200_3263_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3328_3391_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3264_3327_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3008_3071_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3072_3135_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3136_3199_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3712_3775_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3584_3647_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3392_3455_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3456_3519_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3776_3839_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3520_3583_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3648_3711_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4096_4159_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3840_3903_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_384_447_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4160_4223_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3904_3967_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_3968_4031_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4032_4095_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4416_4479_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4288_4351_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4224_4287_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4352_4415_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_0_63_0_2_i_1_n_2      |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_128_191_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1216_1279_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1280_1343_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4480_4543_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4736_4799_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4544_4607_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4608_4671_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4800_4863_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_448_511_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4672_4735_0_2_i_1_n_2 |                  |                9 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4928_4991_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_640_703_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_64_127_0_2_i_1_n_2    |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4992_5055_0_2_i_1_n_2 |                  |               11 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_4864_4927_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_512_575_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_576_639_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_832_895_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_896_959_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_704_767_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_960_1023_0_2_i_1_n_2  |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_768_831_0_2_i_1_n_2   |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1088_1151_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1024_1087_0_2_i_1_n_2 |                  |               10 |             36 |
+|  clk_IBUF_BUFG                   | in_ram_reg_r2_1152_1215_0_2_i_1_n_2 |                  |               10 |             36 |
+|  n_1_1338_BUFG                   |                                     |                  |               34 |             40 |
+|  n_0_1307_BUFG                   |                                     |                  |               43 |             48 |
+|  clk_IBUF_BUFG                   |                                     | rst_IBUF         |               74 |            136 |
++----------------------------------+-------------------------------------+------------------+------------------+----------------+
+
+

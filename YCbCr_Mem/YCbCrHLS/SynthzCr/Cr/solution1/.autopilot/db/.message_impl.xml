@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP."/>
+	<Message severity="WARNING" prefix="[HLS 200-400]" key="HLS 200-400" tag="" content="&apos;full_dsp&apos; is not a valid style for spartan7 &apos;DAddSub&apos; (valid styles: no_dsp). Default style &apos;no_dsp&apos; will be used."/>
+</Messages>
